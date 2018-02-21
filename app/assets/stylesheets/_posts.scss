@@ -1,0 +1,95 @@
+/* Blog page card styles */
+.posts.index {
+  padding-top: 65px;
+  .card {
+    border: none;
+    border-radius: 0.625rem;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+    .card-topper {
+      border-top-left-radius: 0.625rem;
+      border-top-right-radius: 0.625rem;
+      height: 200px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+    .card-block {
+      padding: 1.875rem;
+      .card-title {
+        font-weight: 500;
+        margin-bottom: 0;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+      .tags {
+        margin-bottom: 0;
+        a {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 12px;
+        }
+      }
+      .published-date {
+        font-size: 0.8rem;
+        color: #787878;
+        font-weight: 300;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+      }
+      .card-text {
+        margin-top: 0.8rem;
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+        color: black;
+      }
+
+    }
+  }
+}
+/* End Blog page card styles */
+
+/* Post page styles */
+.post-page {
+margin-top: 100px;
+position: relative;
+text-align: center;
+}
+
+.post-title {
+  font-weight: 500;
+}
+
+.post-published-date {
+  font-size: 0.8rem;
+  color: #787878;
+  font-weight: 300;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+
+/* End Post page styles */
+
+@media screen and (min-width: 34em) {
+  .posts.index .card {
+    height: 440px;
+  }
+}
+
+/* Medium. Above 48em (768px) */
+@media screen and (min-width: 48em) {
+  .posts.index .card {
+    height: 420px;
+  }
+}
+
+/* Extra large. Above 75em (1200px) */
+@media screen and (min-width: 75em) {
+  .posts.index .card {
+    height: 415px;
+  }
+}

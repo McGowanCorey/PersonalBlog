@@ -1,0 +1,42 @@
+.navbar {
+  align-items: stretch;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: stretch;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
+}
+
+.navbar .navbar-section {
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
+  -ms-flex-align: center;
+}
+
+.navbar .navbar-section:not(:first-child):last-child {
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.navbar .navbar-center {
+  align-items: center;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -ms-flex-align: center;
+}
+
+/* Put logo below */
+
+/* .navbar .navbar-brand {
+  font-size: .9rem;
+  font-weight: 500;
+  text-decoration: none;
+} */
