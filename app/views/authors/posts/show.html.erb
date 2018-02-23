@@ -1,0 +1,22 @@
+<% provide(:title, @post.title) %>
+  <% provide(:blog_active, 'active') %>
+
+
+
+
+    <div class="row">
+      <div class="col-md-10 offset-md-2 col-lg-8 offset-lg-2 text-xs-center">
+        <div class="post-page">
+          <div class="post-title">
+            <h1><%= @post.title %></h1>
+          </div>
+          <p class="post-published-date"><%= @post.display_day_published %></p>
+          <%= @post.body %>
+        </div>
+      </div>
+    </div>
+
+
+    <%= link_to 'Edit', edit_authors_post_path(@post), class: "btn btn-warning" %>
+    <%= link_to 'Delete', authors_post_path(@post), method: :delete, data: {
+      confirm: 'Are you sure you want to delete?'}, class: "btn btn-danger" %>
