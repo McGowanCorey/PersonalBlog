@@ -70,9 +70,19 @@ text-align: center;
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
 }
-
-
 /* End Post page styles */
+
+/* Author dashboard styles */
+.posts.edit, .posts.new {
+  .card {
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+}
+
 
 @media screen and (min-width: 34em) {
   .posts.index .card {

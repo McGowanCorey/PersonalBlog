@@ -16,3 +16,13 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+document.addEventListener("turbolinks:load", function() {
+  tinymce.remove()
+  tinymce.init({
+     height: '600',
+     width: '900',
+     selector:'textarea#post_body',
+     plugins: "link image spellchecker textcolor colorpicker media code",
+     toolbar:"undo redo | styleselect | bold italic | forecolor backcolor link image media spellchecker code "
+   });
+})

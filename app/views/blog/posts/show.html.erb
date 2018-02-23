@@ -8,7 +8,7 @@
             <h1><%= @post.title %></h1>
           </div>
           <p class="post-published-date"><%= @post.display_day_published %></p>
-          <%= @post.body %>
+          <%= @post.body.html_safe %>
         </div>
       </div>
     </div>
